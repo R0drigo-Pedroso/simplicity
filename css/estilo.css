@@ -106,3 +106,42 @@ nav h2 {
     right: 0;
     left: 0;
 }
+
+/* Section class Destaque - Configuração e estilização */
+
+.destaque {
+    background-image: url(../imagens/fundo-destaque.jpg);
+    height: 90vh;
+    color: white;
+    background-size: cover; 
+    background-attachment: fixed;
+    
+    /* Alinhamento conteudo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+    .destaque h2 {
+        font-size: clamp(2rem, 8vw, 7rem); /* 2rem até 8vw e 7rem a partir de 8vw - clamp(min, ideil, max)*/
+        
+        /* Animação */
+        animation-name: fadeIn;
+        animation-duration: 1.5s;
+    }   
+
+    .destaque p {
+        font-size: clamp(1.6rem, 2vw, 4rem); 
+
+        /* backwards - atrasa a animação */
+        animation: fadeIn 1.5s 1s backwards;
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;}
+            to {
+                opacity: 1;
+            }
+    }
