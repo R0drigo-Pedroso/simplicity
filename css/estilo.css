@@ -108,7 +108,6 @@ nav h2 {
 }
 
 /* Section class Destaque - Configuração e estilização */
-
 .destaque {
     background-image: url(../imagens/fundo-destaque.jpg);
     height: 90vh;
@@ -188,7 +187,6 @@ nav h2 {
 
 
 /* Estilizando pag produto */
-
 .conteudo {
     background-color: whitesmoke;
     padding: 0.7rem;
