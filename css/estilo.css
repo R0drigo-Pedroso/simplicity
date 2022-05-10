@@ -186,6 +186,58 @@ nav h2 {
         max-width: 800px;
     }
 
+
+/* Estilizando pag produto */
+
+.conteudo {
+    background-color: whitesmoke;
+    padding: 0.7rem;
+    border-radius: 7px;
+}
+
+
+table caption {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+table, th, td {
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+
+table {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 700px;
+}
+
+th {
+    background-color: black;
+    color: white;
+}
+
+td {
+    background-color: white;
+}
+
+th td {
+    width: 33%;
+    padding: 0.5rem;
+}
+
+td:nth-child(1){
+    text-transform: uppercase;
+}
+
+td:nth-child(2){
+    text-align: center;
+}
+
+td:nth-child(3){
+    color: blue;
+}
+
 footer {
     background: black;
     color: white;
@@ -195,6 +247,7 @@ footer {
 
     /* Alinhamento conteudo */
     display: flex;
+    justify-content: center;
     align-items: center;
 }
 
