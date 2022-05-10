@@ -308,5 +308,25 @@
 </script>
 
 
+<!-- Contador de caracteres de digitação -->
+    <script>
+        const spanMaximo = $('#maximo');
+        const bcaracteres = $('#caracteres');
+        const textMensagem = $('#mensagem');
+
+        // Determinando a quantidade de caracteres
+        let quantidade = 100;
+        
+        // OUvinte de evento
+        textMensagem.on('input', function() {
+            let conteudo = textMensagem.val();
+            let contagem = quantidade - conteudo.length;
+            bcaracteres.text(contagem);
+        });
+
+
+    </script>
+
+
 </body>
 </html>
