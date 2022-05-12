@@ -281,6 +281,9 @@ form div {
     margin: 1rem;
 }
 
+.slider img {
+    margin: 0 auto;
+}
 
 /* Media Queries */
 

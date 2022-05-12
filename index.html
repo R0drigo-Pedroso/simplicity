@@ -10,6 +10,9 @@
     
     <!-- CSS -->
     <link rel="stylesheet" href="css/estilo.css">
+
+    <!-- BxSlider -->
+    <link rel="stylesheet" href="plugins/bxslider/jquery.bxslider.css">
     
     <!-- meta description -->
     <meta name="description" content="Simplicity é a maneira mais facil de você entrar no mundo do desenvolvimento front end.">
@@ -46,15 +49,27 @@
 
     <!-- Área do conteúdo Princpal -->
     <main>
-        <section class="destaque">
+        <!-- <section class="destaque">
             <div>
                 <h2>HTML5 e CSS3</h2>
                 <p>A porta de entrada para o desenvolvimento web.</p>
             </div>
-        </section>
+        </section> -->
 
         <!-- slider -->
-        <section></section>
+        <section class="slider">
+            <picture>
+                <img src="imagens/slide1.jpg" alt="">
+            </picture>
+
+            <picture>
+                <img src="imagens/slide2.jpg" alt="">
+            </picture>
+
+            <picture>
+                <img src="imagens/slide3.jpg" alt="">
+            </picture>
+        </section>
         <!-- final slider -->
 
         <!-- Área do conteúdo de texto + 3 imagens -->
@@ -93,5 +108,16 @@
     </footer>
 
     <script src="js/menu.js"></script>
+
+    <!-- BxSlider -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="plugins/bxslider/jquery.bxslider.js"></script>
+    <!-- BxSlider script de funcionamento -->
+    <script>
+        $(document).ready(function(){
+          $('.slider').bxSlider();
+        });
+      </script>
+
 </body>
 </html>
