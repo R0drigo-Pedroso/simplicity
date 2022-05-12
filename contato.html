@@ -322,7 +322,18 @@
             let conteudo = textMensagem.val();
             let contagem = quantidade - conteudo.length;
             bcaracteres.text(contagem);
+            
+            // Se o contador chegar a zero
+            if (contagem == 0) {
+                spanMaximo.css('color', 'red');
+                spanMaximo.text('Limite de caracteres atingido');
+            } else{
+                spanMaximo.html("(restam <b id='caracteres'>" +contagem+ "</b> caracteres)");
+                bcaracteres.css('color', 'black');
+            }
         });
+
+        
 
 
     </script>
